@@ -1,0 +1,39 @@
+name: news_app_tdd_clean_arch
+description: A News App Using TDD and Clean Architecture of Uncle bob
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.15.1 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.4
+  # State Management
+  flutter_bloc: ^8.0.1
+  # Dependency Injection
+  get_it: ^7.2.0
+  # HTTP Calls
+  dio: ^4.0.4
+  # Functional Programming
+  dartz: ^0.10.1
+  # Easy Objects Equality
+  equatable: ^2.0.3
+  # Internet Connectivity Status
+  data_connection_checker_tv: ^0.3.5-nullsafety
+  # Local Database
+  get_storage: ^2.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mockito: ^5.1.0
+  build_runner: ^2.1.7
+
+flutter:
+
+  uses-material-design: true
