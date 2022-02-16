@@ -22,16 +22,16 @@ void main() {
     'should return List<Article> from repository',
     () async {
       // arrange
-      final articles = [
+      final tArticles = [
         Article(title: 'title1', content: 'content1', description: 'description1', author: 'author1', imageUrl: 'imageUrl1', publishAt: 'publishAt1'),
         Article(title: 'title2', content: 'content2', description: 'description2', author: 'author2', imageUrl: 'imageUrl2', publishAt: 'publishAt2'),
       ];
-      when(mockHomeRepository.getSportsNews()).thenAnswer((_) async => Right(articles));
+      when(mockHomeRepository.getSportsNews()).thenAnswer((_) async => Right(tArticles));
       // act
       final result = await getSportsNews();
       // assert
       verify(mockHomeRepository.getSportsNews());
-      expect(result, Right(articles));
+      expect(result, Right(tArticles));
     },
   );
 

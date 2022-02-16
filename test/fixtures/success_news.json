@@ -1,0 +1,14 @@
+{
+  "articles": [
+    {
+      "source": {"id": null, "name": "name"},
+      "author":  "author",
+      "title": "title",
+      "description": "description",
+      "url": "url",
+      "urlToImage": "imageUrl",
+      "publishedAt": "publishAt",
+      "content": "content"
+    }
+  ]
+}
