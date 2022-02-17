@@ -6,6 +6,8 @@ abstract class HomeRemoteDataSource {
   Future<List<ArticleModel>> getSportsNews();
 }
 
+const BASE_URL = 'https://newsapi.org/v2/everything?q=sports&from=2022-01-16&sortBy=publishedAt&apiKey=df1a070b89e64ce78ba286cea86af31b';
+
 class HomeRemoteDataSourceImpl implements HomeRemoteDataSource {
   final Dio dio;
 
@@ -13,7 +15,7 @@ class HomeRemoteDataSourceImpl implements HomeRemoteDataSource {
 
   @override
   Future<List<ArticleModel>> getSportsNews() async {
-    final response = await dio.get('path');
+    final response = await dio.get(BASE_URL);
     if (response.statusCode == 200) {
       return _convertResponseToModel(response.data);
     } else {

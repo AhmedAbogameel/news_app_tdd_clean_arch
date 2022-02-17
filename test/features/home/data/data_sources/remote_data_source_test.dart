@@ -33,13 +33,13 @@ void main() {
   });
 
   final tSuccessResponse = Response(
-    requestOptions: RequestOptions(path: 'path'),
+    requestOptions: RequestOptions(path: BASE_URL),
     data: successJson,
     statusCode: 200,
   );
 
   final tFailureResponse = Response(
-    requestOptions: RequestOptions(path: 'path'),
+    requestOptions: RequestOptions(path: BASE_URL),
     statusCode: 403,
   );
 
