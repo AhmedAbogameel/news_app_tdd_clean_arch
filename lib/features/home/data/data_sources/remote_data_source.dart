@@ -6,7 +6,7 @@ abstract class HomeRemoteDataSource {
   Future<List<ArticleModel>> getSportsNews();
 }
 
-const BASE_URL = 'https://newsapi.org/v2/everything?q=sports&from=2022-01-16&sortBy=publishedAt&apiKey=df1a070b89e64ce78ba286cea86af31b';
+const BASE_URL = 'https://newsapi.org/v2/top-headlines?country=eg&category=sports&apiKey=df1a070b89e64ce78ba286cea86af31b';
 
 class HomeRemoteDataSourceImpl implements HomeRemoteDataSource {
   final Dio dio;

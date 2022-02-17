@@ -13,7 +13,7 @@ class HomeBloc extends Bloc<HomeEvents, HomeStates> {
   final GetSportsNews getSportsNews;
 
   HomeBloc({required this.getSportsNews}) : super(HomeInitialState()) {
-    on<HomeEvents>((event, emit) async {
+    on<HomeGetSportsNewsEvent>((event, emit) async {
       emit(HomeLoadingState());
       final failureOrArticles = await getSportsNews();
       failureOrArticles.fold(

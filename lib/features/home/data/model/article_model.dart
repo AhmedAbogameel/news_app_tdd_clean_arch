@@ -18,12 +18,12 @@ class ArticleModel extends Article {
         );
 
   factory ArticleModel.fromJson(Map<String, dynamic> json) => ArticleModel(
-        title: json['title'],
-        content: json['content'],
-        description: json['description'],
-        author: json['author'],
-        imageUrl: json['urlToImage'],
-        publishAt: json['publishedAt'],
+        title: json['title'] == null ? '' : json['title'],
+        content: json['content'] == null ? '' : json['content'],
+        description: json['description'] == null ? '' : json['description'],
+        author: json['author'] == null ? '' : json['author'],
+        imageUrl: json['urlToImage'] == null ? 'https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png' : json['urlToImage'],
+        publishAt: json['publishedAt'] == null ? '' : json['publishedAt'],
       );
 
   Map<String, dynamic> toJson() => {
