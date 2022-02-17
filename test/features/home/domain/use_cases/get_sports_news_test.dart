@@ -6,7 +6,7 @@ import 'package:news_app_tdd_clean_arch/features/home/domain/entity/article.dart
 import 'package:news_app_tdd_clean_arch/features/home/domain/respository/respository.dart';
 import 'package:news_app_tdd_clean_arch/features/home/domain/use_cases/get_sports_news.dart';
 
-import 'get_sports_news.mocks.dart';
+import 'get_sports_news_test.mocks.dart';
 
 @GenerateMocks([HomeRepository])
 void main() {
