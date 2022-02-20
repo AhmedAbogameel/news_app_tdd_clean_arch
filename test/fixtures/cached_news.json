@@ -1,0 +1,10 @@
+[
+  {
+    "author":  "author",
+    "title": "title",
+    "description": "description",
+    "urlToImage": "imageUrl",
+    "publishedAt": "publishAt",
+    "content": "content"
+  }
+]

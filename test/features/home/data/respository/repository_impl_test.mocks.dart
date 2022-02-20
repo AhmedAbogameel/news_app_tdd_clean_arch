@@ -5,6 +5,8 @@
 import 'dart:async' as _i3;
 
 import 'package:mockito/mockito.dart' as _i1;
+import 'package:news_app_tdd_clean_arch/features/home/data/data_sources/local_data_source.dart'
+    as _i5;
 import 'package:news_app_tdd_clean_arch/features/home/data/data_sources/remote_data_source.dart'
     as _i2;
 import 'package:news_app_tdd_clean_arch/features/home/data/model/article_model.dart'
@@ -35,4 +37,26 @@ class MockHomeRemoteDataSource extends _i1.Mock
               returnValue:
                   Future<List<_i4.ArticleModel>>.value(<_i4.ArticleModel>[]))
           as _i3.Future<List<_i4.ArticleModel>>);
+}
+
+/// A class which mocks [HomeLocalDataSource].
+///
+/// See the documentation for Mockito's code generation for more information.
+class MockHomeLocalDataSource extends _i1.Mock
+    implements _i5.HomeLocalDataSource {
+  MockHomeLocalDataSource() {
+    _i1.throwOnMissingStub(this);
+  }
+
+  @override
+  _i3.Future<List<_i4.ArticleModel>> getSportsNews() =>
+      (super.noSuchMethod(Invocation.method(#getSportsNews, []),
+              returnValue:
+                  Future<List<_i4.ArticleModel>>.value(<_i4.ArticleModel>[]))
+          as _i3.Future<List<_i4.ArticleModel>>);
+  @override
+  _i3.Future<void> setSportsNews(List<_i4.ArticleModel>? articles) =>
+      (super.noSuchMethod(Invocation.method(#setSportsNews, [articles]),
+          returnValue: Future<void>.value(),
+          returnValueForMissingStub: Future<void>.value()) as _i3.Future<void>);
 }
