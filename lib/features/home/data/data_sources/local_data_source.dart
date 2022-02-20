@@ -1,7 +1,5 @@
 import 'dart:convert';
-
 import 'package:get_storage/get_storage.dart';
-import 'package:news_app_tdd_clean_arch/core/cache_manager/cache_manager.dart';
 import 'package:news_app_tdd_clean_arch/core/errors/exceptions.dart';
 import 'package:news_app_tdd_clean_arch/features/home/data/model/article_model.dart';
 
